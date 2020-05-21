@@ -4,14 +4,14 @@ using System.Text;
 
 namespace DataClassLibrary
 {
-    class DailyReportCovid
+    public class DailyCovidReport
     {
         public string dateRep { get; set; }
         public string day { get; set; }
         public string month { get; set; }
         public string year { get; set; }
-        public string cases { get; set; }
-        public string deaths { get; set; }
+        public int cases { get; set; }
+        public int deaths { get; set; }
         public string countriesAndTerritories { get; set; }
         public string geoId { get; set; }
         public string countryterritoryCode { get; set; }
