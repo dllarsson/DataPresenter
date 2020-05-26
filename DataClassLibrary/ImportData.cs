@@ -31,7 +31,9 @@ namespace DataClassLibrary
                 }
                 else
                 {
+                    Console.Write("Downloadning new data... ");
                     json = wc.DownloadString(url); //Download new file.
+                    Console.Write("done!");
                 }
                 
                 var resultObjects = AllChildren(JObject.Parse(json)).First(c => c.Type == JTokenType.Array && c.Path.Contains("records")).Children<JObject>();
